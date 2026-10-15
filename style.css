@@ -656,48 +656,6 @@ h1::before{
 
 
 
-/* Контейнер в левом верхнем углу */
-.download {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-/* Сама ссылка */
-.download a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 18px;
-  background: #15eb38;
-  color: #fff;
-  text-decoration: none;
-  font-family: Inter;
-  font-size: 15px;
-  font-weight: 500;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(59, 245, 2, 0.995);
-  transition: all 0.2s ease;
-}
-
-.download a:hover {
-  background: #009516;
-  box-shadow: 0 6px 16px rgba(0, 80, 4, 0.35);
-  transform: translateY(-1px);
-}
-
-.download a:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(26, 115, 232, 0.25);
-}
-
-/* Иконка скачивания через псевдоэлемент */
-.download a::before {
-  content: "📄";
-  font-size: 16px;
-}
-
 /* Адаптив для телефонов */
 @media (max-width: 600px) {
   .download {
